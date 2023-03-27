@@ -1,0 +1,57 @@
+﻿<!--
+
+    Scott Walker
+    March 26, 2023
+
+-->
+
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+    <script type="text/javascript" src="js/conversion.js"></script>
+    <title>Gallon Conversion</title>
+</head>
+<body>
+    <div data-role="page">
+
+        <!-- /header -->
+        <div data-role="header">
+
+            <h1>Converting Fluid Measurements</h1>
+
+        </div>
+
+        <div data-role="content">
+
+            <!--Code for inputting gallons-->
+            <label for="input">Enter the quantity in gallons:</label>
+            <input type="range" name="gallons" id="gallons" value="0" min="0" max="1000">
+
+            <!--Code for creating a button that displays values on click-->
+            <button onclick="display();">Display</button>
+            
+            <!--Creates table that displays data for gallons and pints-->
+            <table id="data">
+                <tr>
+                    <td>Number of Gallons Entered:</td>
+                    <td id="gallonDisplay">0</td>
+                </tr>
+                <tr>
+                    <td>Gallons Coverted to Pints:</td>
+                    <td id="pints">0</td>
+                </tr>
+            </table>
+
+        </div><!-- /content -->
+
+    </div><!-- /page -->
+
+</body>
+</html>
